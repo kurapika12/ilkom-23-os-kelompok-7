@@ -1,1 +1,1 @@
-print ("Iank ganteng")
+print ("iank keren abiezz")
