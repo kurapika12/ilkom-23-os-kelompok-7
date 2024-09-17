@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 import sqlite3
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your_secret_key'  # Untuk menggunakan flash messages
 
 # Fungsi untuk koneksi ke database
 def get_db_connection():
@@ -41,13 +42,16 @@ def add_book():
         year = request.form['year']
         pages = request.form['pages']
 
-        conn = get_db_connection()
-        conn.execute('INSERT INTO books (title, author, year, pages) VALUES (?, ?, ?, ?)',
-                     (title, author, year, pages))
-        conn.commit()
-        conn.close()
-
-        return redirect(url_for('index'))
+        if not title or not author or not year or not pages:
+            flash('Semua field wajib diisi!', 'error')
+        else:
+            conn = get_db_connection()
+            conn.execute('INSERT INTO books (title, author, year, pages) VALUES (?, ?, ?, ?)',
+                         (title, author, year, pages))
+            conn.commit()
+            conn.close()
+            flash('Buku berhasil ditambahkan!', 'success')
+            return redirect(url_for('index'))
 
     return render_template('add_book.html')
 
@@ -63,12 +67,15 @@ def edit_book(id):
         year = request.form['year']
         pages = request.form['pages']
 
-        conn.execute('UPDATE books SET title = ?, author = ?, year = ?, pages = ? WHERE id = ?',
-                     (title, author, year, pages, id))
-        conn.commit()
-        conn.close()
-
-        return redirect(url_for('index'))
+        if not title or not author or not year or not pages:
+            flash('Semua field wajib diisi!', 'error')
+        else:
+            conn.execute('UPDATE books SET title = ?, author = ?, year = ?, pages = ? WHERE id = ?',
+                         (title, author, year, pages, id))
+            conn.commit()
+            conn.close()
+            flash('Buku berhasil diperbarui!', 'success')
+            return redirect(url_for('index'))
 
     return render_template('edit_book.html', book=book)
 
@@ -79,6 +86,7 @@ def delete_book(id):
     conn.execute('DELETE FROM books WHERE id = ?', (id,))
     conn.commit()
     conn.close()
+    flash('Buku berhasil dihapus!', 'success')
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
