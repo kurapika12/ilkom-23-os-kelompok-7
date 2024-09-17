@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ihram</title>
-  </head>
-  <body>
-    <h2>alam</h2>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Library System</title>
+</head>
+<body>
+    <h1>Library Collection</h1>
+    <a href="{{ url_for('add_book') }}">Add New Book</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Pages</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book['title'] }}</td>
+                <td>{{ book['author'] }}</td>
+                <td>{{ book['year'] }}</td>
+                <td>{{ book['pages'] }}</td>
+                <td>
+                    <a href="{{ url_for('edit_book', id=book['id']) }}">Edit</a>
+                    <form action="{{ url_for('delete_book', id=book['id']) }}" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
 </html>
