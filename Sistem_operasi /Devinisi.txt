@@ -1,0 +1,8 @@
+Sistem operasi adalah sebuah program atau software yang bertindak sebagai perantara antara pengguna dan komputer (hardware).Sistem operasi dibuat untuk mengendalikan dan mengkoordinasikan
+seluruh kegiatan dari sistem komputer.Jadi, tanpa sistem operasi perangkat keras komputer ini tidak bisa menjalankan fungsi-fungsinya.
+
+contoh sistem operasi yaitu :
+1.Windows
+2.Mac/ios
+3.Android
+4.Linux
