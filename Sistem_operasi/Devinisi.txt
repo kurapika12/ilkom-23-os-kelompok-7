@@ -1,0 +1,10 @@
+Sistem operasi adalah suatu program atau software yang menjadi penghubung antara pengguna dan komputer
+(hardware).Jadi dengan adanya sistem operasi itu memungkinkan penggunaan perangkat keras itu berjalan
+dengan semestinya
+
+berbagai contoh sistem operasi yang sudah sering kita kenal yakni:
+1. windows
+2. mac
+3. Android
+4. Linux
+
