@@ -1,0 +1,11 @@
+Sistem operasi mengharuskan ia bekerja dengan sangat kompleks.Dari penangani perangkat keras, perangkat lunak atau program yang berjalan
+tentu hal ini memerlukan berbagai komponen komponen yang bekerja dengan fungsinya masing masing.
+
+Dari berbagai macam sistem operasi yang ada, tidak semuanya memiliki komponen penyusun yang sama.
+Pada umumnya sebuah sistem operasi modern akan terdiri dari komponen sebagai berikut:
+
+1. Manajemen Memori
+2. Manajemen Sitem File (filesystem)
+3. Manajemen Sistem I/O 
+4. Manajemen Storage 
+5. Manajemen Proses
