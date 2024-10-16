@@ -6,9 +6,9 @@ Status Proses :
 Pada saat proses dieksekusi, akan terjadi prubahan status.Status proses didefinisikan sebagai bagian dari 
 aktivitas proses yang sedang berlangsung saat itu.Status proses terdiri dari :
 
-Running : Statusyang dimiliki pada saat instruksi-instruksi dari sebuah proses dieksekusi.
+Running : Status yang dimiliki pada saat instruksi-instruksi dari sebuah proses dieksekusi.
 Waiting : Status yang dimiliki pada saat proses menunggu suatu sebuah event seperti proes I/O.
-Ready : Statusyang dimiliki pada saat proses siap untuk dieksekusi oleh prosesor
+Ready : Status yang dimiliki pada saat proses siap untuk dieksekusi oleh prosesor
 New : Status yang dimiliki pada saat proses baru saja dibuat
 Terminated : Status yang dimiliki pada saat proses telah selesai dieksekusi
 
