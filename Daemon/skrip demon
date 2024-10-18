@@ -1,0 +1,10 @@
+git commit -m "Menambahkan Dockerfile dan skrip daemon_process.sh untuk menjalankan daemon di Docker
+
+Dockerfile ini berfungsi untuk membuat image Docker berbasis Ubuntu yang menjalankan proses daemon di background.
+Skrip daemon_process.sh adalah contoh sederhana daemon yang mencatat log ke file setiap 60 detik.
+
+- Dockerfile menggunakan image Ubuntu sebagai base image dan menginstal bash untuk menjalankan daemon.
+- Skrip daemon_process.sh akan dijalankan secara otomatis saat container dimulai.
+- Container ini menunjukkan cara kerja dasar proses daemon dalam lingkungan Docker.
+
+Skrip ini berguna untuk memahami konsep daemon serta penerapannya di Docker container."
