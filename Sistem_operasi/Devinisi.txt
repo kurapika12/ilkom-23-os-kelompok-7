@@ -7,4 +7,5 @@ berbagai contoh sistem operasi yang sudah sering kita kenal yakni:
 2. mac
 3. Android
 4. Linux
+5. IOS
 
