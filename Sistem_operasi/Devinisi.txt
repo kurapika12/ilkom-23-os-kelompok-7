@@ -9,3 +9,10 @@ berbagai contoh sistem operasi yang sudah sering kita kenal yakni:
 4. Linux
 5. IOS
 
+Fungsi Utama Sistem Operasi
+Sistem operasi memiliki beberapa fungsi utama, antara lain:
+1. Manajemen Proses: Mengatur eksekusi proses, termasuk penjadwalan dan pengendalian proses.
+2. anajemen Memori: Mengelola penggunaan memori, termasuk alokasi dan dealokasi memori untuk aplikasi yang berjalan.
+3. Manajemen Perangkat: Mengontrol dan mengatur perangkat keras, seperti printer, disk, dan jaringan.
+4. Antarmuka Pengguna: Menyediakan antarmuka bagi pengguna untuk berinteraksi dengan komputer, baik melalui command line atau graphical user interface (GUI).
+

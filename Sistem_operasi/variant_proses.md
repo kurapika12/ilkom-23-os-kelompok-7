@@ -1,4 +1,4 @@
 Pada saat menjalankan kode yang sudah kita buat, kita harus memilih kelompok proses apa yang tepat bagi kode yang sudah kita buat ?.Berdasarkan interaksi dan keterikatan dengan terminal, proses dapat dibagi menjadi beberapa kelompok:
-1. Background process
-2. Foreground process
-3. Daemon proces
+1. Background process adalah proses yang berjalan di latar belakang dan tidak berinteraksi langsung dengan pengguna. Contoh umum dari background process termasuk proses yang menjalankan tugas pemeliharaan sistem, seperti pembaruan perangkat lunak atau pencadangan data. 
+2. Foreground process adalah proses ini memerlukan perhatian pengguna dan biasanya menampilkan output di terminal atau antarmuka pengguna. Contoh dari foreground process termasuk aplikasi seperti pengolah kata, browser web, atau terminal itu sendiri. 
+3. Daemon proces biasanya dimulai saat sistem booting dan terus berjalan di latar belakang untuk menangani permintaan atau tugas tertentu, seperti server web, server database, atau layanan jaringan. 
