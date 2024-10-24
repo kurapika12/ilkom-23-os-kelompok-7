@@ -55,4 +55,4 @@ $ sudo systemctl status aslam.service
 ```
 
 ## Bukti daemon telah berjalan
-![Bukti daemon](bukti-riansyah.jpg)
+![Bukti daemon](proof-aslam.png)
