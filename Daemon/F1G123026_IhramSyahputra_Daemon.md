@@ -32,16 +32,17 @@ ExecStart=/usr/bin/php -S localhost:8000
 Restart=always
 RestartSec=3
 ```
-
 ## 3. jalankan perintah daemon 
 ```bash
 $ sudo systemctl daemon-reload 
 $ sudo systemctl enable iamsyh.service 
 $ sudo systemctl start iamsyh.service
 ```
-
 ## 4. Bukti file service telah berjalan sebagai daemon
 ```bash
 $ sudo systemctl status iamsyh.service
 ```
 ![Bukti_daemon](/Bukti_gambar/proof-iamdaemon.png)
+
+## 5. Bukti daemon telah berjalan 
+![Bukti_Web_telah_berjalan_didaemonProses](Bukti_gambar/proof-iamweb.pngproof-iamweb.png)
