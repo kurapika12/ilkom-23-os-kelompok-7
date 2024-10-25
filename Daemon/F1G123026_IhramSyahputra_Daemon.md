@@ -9,3 +9,26 @@ masuk sebagai superuser, lalu jalankan perintah
 ```bash
 $ sudo nano /etc/systemd/system/iamsyh.service
 ```
+## 2. Isi file.service (iamsyh.service) dengan konfigurasi web PHP berikut :
+```bash
+[Unit]
+Description=PHP Web Application dengan Apache
+After=network.target apache2.service
+Requires=apache2.service
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/RPL-kelompok-11
+
+# Environment untuk PHP
+Environment=PHP_ENV=production
+Environment=DB_HOST=localhost
+Environment=DB_USER=root
+Environment=DB_PASS=""
+Environment=DB_NAME=db_warung
+
+ExecStart=/usr/bin/php -S localhost:8000
+Restart=always
+RestartSec=3
+```
