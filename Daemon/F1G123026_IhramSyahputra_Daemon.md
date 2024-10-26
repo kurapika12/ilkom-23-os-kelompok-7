@@ -48,7 +48,7 @@ $ sudo systemctl status iamsyh.service
 ```
 ![Bukti_daemon](Bukti_gambar/proof-iamdaemon.png)
 
-## 6. Bukti daemon telah berjalan 
+## 6. Bukti web telah berjalan didaemon proses  
 ![Bukti_Web_telah_berjalan_didaemonProses](Bukti_gambar/proof-iamweb.png)
 
 ## Hal yang perlu diperhatikan
