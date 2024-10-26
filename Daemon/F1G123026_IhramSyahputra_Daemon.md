@@ -46,10 +46,10 @@ $ sudo systemctl start iamsyh.service
 ```bash
 $ sudo systemctl status iamsyh.service
 ```
-![Bukti_daemon](/Bukti_gambar/proof-iamdaemon.png)
+![Bukti_daemon](Bukti_gambar/proof-iamdaemon.png)
 
 ## 6. Bukti daemon telah berjalan 
-![Bukti_Web_telah_berjalan_didaemonProses](Bukti_gambar/proof-iamweb.pngproof-iamweb.png)
+![Bukti_Web_telah_berjalan_didaemonProses](Bukti_gambar/proof-iamweb.png)
 
 ## Hal yang perlu diperhatikan
 1. Instalasi dasar : sebelum membuat konfigurasi,pastikan komponen utama sudah terinstal di server yaitu Apache2,PHP,dan MySQL(jika aplikasi membutuhkan database)
