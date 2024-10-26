@@ -32,17 +32,30 @@ ExecStart=/usr/bin/php -S localhost:8000
 Restart=always
 RestartSec=3
 ```
-## 3. jalankan perintah daemon 
+## 3. Melakukan Permission (hak akses) file terhadap linux 
+```bash
+$ sudo chmod 644 /etc/systemd/system/iamsyh.service
+```
+## 4. jalankan perintah daemon 
 ```bash
 $ sudo systemctl daemon-reload 
 $ sudo systemctl enable iamsyh.service 
 $ sudo systemctl start iamsyh.service
 ```
-## 4. Bukti file service telah berjalan sebagai daemon
+## 5. Bukti file service telah berjalan sebagai daemon
 ```bash
 $ sudo systemctl status iamsyh.service
 ```
 ![Bukti_daemon](/Bukti_gambar/proof-iamdaemon.png)
 
-## 5. Bukti daemon telah berjalan 
+## 6. Bukti daemon telah berjalan 
 ![Bukti_Web_telah_berjalan_didaemonProses](Bukti_gambar/proof-iamweb.pngproof-iamweb.png)
+
+## Hal yang perlu diperhatikan
+1. Instalasi dasar : sebelum membuat konfigurasi,pastikan komponen utama sudah terinstal di server yaitu Apache2,PHP,dan MySQL(jika aplikasi membutuhkan database)
+
+2. Pastikan struktur folder aplikasi sudah siap dan berada di lokasi yang tepat (umumnya /var/www/html/).Yang penting diperhatikan adalah permission folder harus sesuai agar bisa diakses oleh web server. Folder yang membutuhkan akses write seperti upload dan log harus memiliki permission yang tepat. 
+
+3. Tentukan mode environment yang akan digunakan (production atau development). Ini penting karena akan mempengaruhi bagaimana aplikasi berperilaku, terutama dalam hal menampilkan error dan logging. Dalam production, error details sebaiknya disembunyikan dari user.
+
+4. Jika aplikasi menggunakan database, pastikan MySQL sudah terinstal dan memiliki user dengan permission yang sesuai. Informasi koneksi database (host, username, password) perlu disiapkan untuk dimasukkan ke dalam konfigurasi environment.
