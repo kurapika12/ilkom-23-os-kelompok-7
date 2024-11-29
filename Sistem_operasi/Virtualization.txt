@@ -1,0 +1,26 @@
+1. Pengertian Virtualization
+
+Virtualization adalah proses atau teknologi yang memungkinkan pembuatan versi virtual dari sumber daya fisik,
+seperti server, penyimpanan, jaringan, atau sistem operasi, sehingga sumber daya tersebut dapat diakses dan
+digunakan seolah-olah mereka adalah entitas independen. Dengan kata lain, virtualization menciptakan lingkungan
+virtual yang dapat berjalan di atas perangkat keras fisik.
+
+2. Jenis-Jenis Virtualization
+~Server Virtualization
+Memisahkan server fisik menjadi beberapa server virtual, sehingga setiap server virtual dapat menjalankan
+aplikasi atau sistem operasi yang berbeda secara independen. Contoh: VMware, Hyper-V.
+Desktop Virtualization
+Memungkinkan pengguna untuk mengakses desktop mereka dari jarak jauh di perangkat apapun.
+Contoh: Virtual Desktop Infrastructure (VDI).
+
+~Storage Virtualization
+Menggabungkan beberapa perangkat penyimpanan fisik menjadi satu unit penyimpanan virtual yang terpusat.
+Contoh: SAN (Storage Area Network).
+
+~Network Virtualization
+Membagi jaringan fisik menjadi beberapa jaringan virtual untuk efisiensi dan fleksibilitas.
+Contoh: VLAN (Virtual LAN), SDN (Software-Defined Networking)
+
+~Application Virtualization
+Menjalankan aplikasi di lingkungan virtual tanpa harus menginstalnya secara langsung di sistem operasi.
+Contoh: Citrix Virtual Apps.
