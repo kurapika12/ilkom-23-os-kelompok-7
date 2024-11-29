@@ -88,7 +88,11 @@ $ sudo systemctl enable darma.service
 $ sudo systemctl start darma.service
 $ sudo systemctl status darma.service
 ```
+## Bukti daemon telah berjalan
+![Bukti daemon](Bukti_gambar/daemon_dar.jpg)
 
+## Bukti Web nya
+![Bukti web](Bukti_gambar/web_dar.jpg)
 
 
 
