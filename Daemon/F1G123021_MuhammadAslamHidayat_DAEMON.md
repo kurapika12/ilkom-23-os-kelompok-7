@@ -56,3 +56,6 @@ $ sudo systemctl status aslam.service
 
 ## Bukti daemon telah berjalan
 ![Bukti daemon](Bukti_gambar/proof-aslam.png)
+
+## Bukti Web nya
+![Bukti web](Bukti_gambar/proof-web-aslam.png)
