@@ -17,3 +17,25 @@ Docker Images menyediakan semua yang diperlukan aplikasi untuk berjalan tanpa di
 Docker Images memungkinkan pengemasan aplikasi untuk pengujian otomatis, pembuatan pipeline, dan deployment cepat di berbagai lingkungan.
 8. Mempermudah Skalabilitas
 Docker Images mendukung pengelolaan aplikasi skala besar, terutama dalam sistem berbasis microservices. Dengan mudah, aplikasi dapat di-scale up atau di-scale down hanya dengan menjalankan container baru dari image yang sama.
+
+## Perintah Membuat Docker Image dan Penjelasannya
+1. Membuat dockerfile terlebih dahulu yang berisi :
+
+FROM caddy:latest
+
+# salin seluruh file index.html kedalam folder caddy
+COPY ./index.html /usr/share/caddy/
+
+Salah satu perintah yang paling umum digunakan adalah `docker build`. Berikut adalah contoh dan penjelasan dari perintah tersebut:
+
+### Perintah 
+```
+docker buid -t <nama_image> .
+```
+
+### Penjelasan Perintah
+1. `docker build`: Perintah untuk membuat Docker image dari file konfigurasi yang disebut Dockerfile.
+2. `-t <nama_image>`: Memberi nama (tag) pada Docker image yang dibuat.
+    - `<nama_image>`: Nama yang ingin Anda berikan pada image, seperti : caddy-server.
+3. `.`: Menunjukkan lokasi Dockerfile yang digunakan untuk membangun image. Dalam hal ini, . berarti Dockerfile berada di direktori saat ini.
+
