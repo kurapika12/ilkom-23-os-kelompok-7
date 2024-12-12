@@ -34,8 +34,17 @@ docker buid -t <nama_image> .
 ```
 
 ### Penjelasan Perintah
-1. `docker build`: Perintah untuk membuat Docker image dari file konfigurasi yang disebut Dockerfile.
-2. `-t <nama_image>`: Memberi nama (tag) pada Docker image yang dibuat.
-    - `<nama_image>`: Nama yang ingin Anda berikan pada image, seperti : caddy-server.
-3. `.`: Menunjukkan lokasi Dockerfile yang digunakan untuk membangun image. Dalam hal ini, . berarti Dockerfile berada di direktori saat ini.
+1. **`docker build`**: Perintah untuk membuat Docker image dari file konfigurasi yang disebut Dockerfile.
+2. **`-t <nama_image>`**: Memberi nama (tag) pada Docker image yang dibuat.
+    -**`<nama_image>`**: Nama yang ingin Anda berikan pada image, seperti : caddy-server.
+3. **`.`**: Menunjukkan lokasi Dockerfile yang digunakan untuk membangun image. Dalam hal ini, . berarti Dockerfile berada di direktori saat ini.
 
+### Contoh Perintah Untuk Memeriksa Image yang telah dibuat
+```
+docker images
+```
+**Penjelasan**:
+- Perintah ini akan menampilkan daftar image yang tersedia pada sistem Docker Anda.
+- Kolom REPOSITORY menunjukkan nama image.
+- Kolom TAG menunjukkan tag atau versi image.
+- Kolom IMAGE ID menunjukkan ID unik untuk setiap image.
