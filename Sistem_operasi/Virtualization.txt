@@ -22,7 +22,12 @@ beberapa server virtual secara bersamaan. Dengan bantuan perangkat lunak seperti
 dapat dibagi menjadi beberapa lingkungan virtual yang independen. Setiap server virtual ini dapat menjalankan
 sistem operasi dan aplikasi secara terpisah, seolah-olah mereka menggunakan perangkat keras fisiknya sendiri.
 Teknologi ini dirancang untuk mengoptimalkan pemanfaatan sumber daya perangkat keras, yang sering kali tidak
-dimanfaatkan sepenuhnya jika digunakan secara tradisional untuk satu server fisik per aplikasi.
+dimanfaatkan sepenuhnya jika digunakan secara tradisional untuk satu server fisik per aplikasi. Selain itu,
+server virtualization membantu mengurangi kebutuhan akan perangkat keras fisik, sehingga menurunkan biaya
+pembelian perangkat baru dan pemeliharaan. Teknologi ini juga meningkatkan fleksibilitas dalam pengelolaan
+infrastruktur IT, memungkinkan perusahaan untuk menambah atau menghapus server virtual sesuai kebutuhan tanpa
+harus mengganggu operasi server lain Dengan kemampuan ini, organisasi dapat dengan mudah memperluas kapasitas
+sistem mereka, meningkatkan efisiensi, dan mengurangi dampak lingkungan dari konsumsi energi yang tinggi.
 
 ~Storage Virtualization
 Menggabungkan beberapa perangkat penyimpanan fisik menjadi satu unit penyimpanan virtual yang terpusat.
