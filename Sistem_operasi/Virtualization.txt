@@ -17,11 +17,9 @@ sumber daya mereka dan meningkatkan produktivitas.
 
 2. Jenis-Jenis Virtualization
 ~Server Virtualization
-Memisahkan server fisik menjadi beberapa server virtual, sehingga setiap server virtual dapat menjalankan
-aplikasi atau sistem operasi yang berbeda secara independen. Contoh: VMware, Hyper-V.
-Desktop Virtualization
-Memungkinkan pengguna untuk mengakses desktop mereka dari jarak jauh di perangkat apapun.
-Contoh: Virtual Desktop Infrastructure (VDI).
+Server Virtualization adalah teknologi yang memungkinkan satu perangkat keras fisik untuk menjalankan
+beberapa server virtual secara bersamaan. Dengan bantuan perangkat lunak seperti hypervisor, server fisik
+dapat dibagi menjadi beberapa lingkungan virtual yang independen. 
 
 ~Storage Virtualization
 Menggabungkan beberapa perangkat penyimpanan fisik menjadi satu unit penyimpanan virtual yang terpusat.
