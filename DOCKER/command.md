@@ -49,6 +49,10 @@ cat /etc/caddy/Caddyfile
 ```
 ps aux
 ```
+**bukti**
+
+<img width="589" alt="{EE59F3B7-A03E-440A-A999-770CCF158DC9}" src="https://github.com/user-attachments/assets/16834e09-90aa-44f8-9401-ffdf74f7be3c" />
+
 **Penjelasan :**
 - ps: Perintah ini digunakan untuk menampilkan daftar proses yang sedang berjalan di sistem.
 - a: Menampilkan proses dari semua pengguna.
