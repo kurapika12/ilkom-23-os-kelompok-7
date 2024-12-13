@@ -19,7 +19,10 @@ sumber daya mereka dan meningkatkan produktivitas.
 ~Server Virtualization
 Server Virtualization adalah teknologi yang memungkinkan satu perangkat keras fisik untuk menjalankan
 beberapa server virtual secara bersamaan. Dengan bantuan perangkat lunak seperti hypervisor, server fisik
-dapat dibagi menjadi beberapa lingkungan virtual yang independen. 
+dapat dibagi menjadi beberapa lingkungan virtual yang independen. Setiap server virtual ini dapat menjalankan
+sistem operasi dan aplikasi secara terpisah, seolah-olah mereka menggunakan perangkat keras fisiknya sendiri.
+Teknologi ini dirancang untuk mengoptimalkan pemanfaatan sumber daya perangkat keras, yang sering kali tidak
+dimanfaatkan sepenuhnya jika digunakan secara tradisional untuk satu server fisik per aplikasi.
 
 ~Storage Virtualization
 Menggabungkan beberapa perangkat penyimpanan fisik menjadi satu unit penyimpanan virtual yang terpusat.
