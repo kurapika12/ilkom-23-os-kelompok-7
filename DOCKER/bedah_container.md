@@ -61,6 +61,7 @@ find / -name index.html
     gunakan editor text seperti Vi atau nano(jika tersedia)
 
 ### Gunakan perintah berikut untuk mengedit file :
+*menggunakan vi :
  ```
 vi /usr/share/caddy/index.html
 ```
@@ -69,6 +70,13 @@ vi /usr/share/caddy/index.html
 * tekan esc untuk keluar dari mode edit 
 * ketik : wq untuk menyimpan hasil edit dan keluar dari editor
 
+*menggunakan nano :
+ ```
+nano /usr/share/caddy/index.html
+```
+* edit isi file sesuai kebutuhan
+* tekan ctrl + x untuk keluar dari editor
+* tekan y untuk konfirmasi perubahan dan enter untuk keluar
 
 **3. Keluar dari container:**
 ### Perintah
@@ -77,5 +85,5 @@ exit
 ```
 
 ## Kesimpulan
-Docker Container adalah teknologi yang memungkinkan pengemasan aplikasi beserta semua dependensinya agar dapat dijalankan secara konsisten di berbagai lingkungan. Dengan fungsi-fungsi seperti portabilitas, efisiensi, dan pengelolaan aplikasi yang mudah, Docker telah menjadi bagian penting dari pengembangan perangkat lunak modern. Perintah docker exec -it caddy-container /bin/sh memungkinkan kita untuk masuk ke dalam container secara interaktif dan menjalankan perintah Linux, sedangkan ps aux dan ls /etc/caddy berguna untuk memeriksa proses yang berjalan dan konfigurasi dalam container. Dengan cara ini, pengelolaan dan eksplorasi container dapat dilakukan dengan lebih fleksibel dan efisien.
+Docker Container adalah teknologi yang memungkinkan pengemasan aplikasi beserta semua dependensinya agar dapat dijalankan secara konsisten di berbagai lingkungan. Dengan fungsi-fungsi seperti portabilitas, efisiensi, dan pengelolaan aplikasi yang mudah, Docker telah menjadi bagian penting dari pengembangan perangkat lunak modern. Perintah docker exec -it caddy-container /bin/sh memungkinkan kita untuk masuk ke dalam container secara interaktif dan menjalankan perintah Linux, sedangkan ps aux dan ls /etc/caddy berguna untuk memeriksa proses yang berjalan dan konfigurasi dalam container.Selain itu untuk mengedit isi dari container misal pada index.html bisa menggunakan editor text seperti vi atau nano Dengan cara ini, pengelolaan dan eksplorasi container dapat dilakukan dengan lebih fleksibel dan efisien.
 
