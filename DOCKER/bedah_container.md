@@ -13,19 +13,25 @@ docker exec -it caddy-container /bin/sh
 
 **2. Lakukan eksplorasi atau menjalankan command Linux:**
 
-    **-Cek file dalam container:**
+    **- Cek file dalam container:**
 
 ### Perintah
 ```
 ls /etc/caddy
 
 ```
+**bukti**
+
+<img width="272" alt="{64D9156E-37E5-433D-8470-BE2398F7606D}" src="https://github.com/user-attachments/assets/daafeb63-9fe7-466a-9f9f-7ece1efcb79d" />
+
 **Penjelasan**:
 - ls: Perintah ini digunakan untuk menampilkan daftar file dan direktori dalam folder tertentu.
     /etc/caddy: Merujuk pada direktori /etc/caddy di dalam container atau sistem file di host. Direktori ini biasanya digunakan untuk konfigurasi server web Caddy.
     /etc/caddy adalah lokasi default tempat file konfigurasi Caddy disimpan, seperti file Caddyfile yang berisi aturan konfigurasi untuk server web Caddy.
+- nama file nya `Caddyfile`
 
-    **- Cek file dalam container:**
+
+    **- lihat proses yang berjalan:**
 
 ### Perintah
 ```
