@@ -55,7 +55,7 @@ ps aux
 find / -name index.html
 
 ```
-**3. Mengedit isi index.html:**
+**4. Mengedit isi index.html:**
 
     **- setelah menemukan file index.html :**
     gunakan editor text seperti Vi atau nano(jika tersedia)
@@ -78,7 +78,7 @@ nano /usr/share/caddy/index.html
 * tekan ctrl + x untuk keluar dari editor
 * tekan y untuk konfirmasi perubahan dan enter untuk keluar
 
-**3. Keluar dari container:**
+**.5 Keluar dari container:**
 ### Perintah
 ```
 exit
