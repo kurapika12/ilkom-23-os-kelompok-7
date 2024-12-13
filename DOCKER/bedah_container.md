@@ -1,4 +1,4 @@
-## Langkah - langkah untuk melakukan beberapa command dalam container
+## Langkah - langkah untuk melakukan bedah container dengan beberapa command seperti berikut :
 
 **1. Masuk ke dalam container secara interaktif:**
 
