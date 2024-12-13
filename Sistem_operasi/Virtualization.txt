@@ -1,9 +1,8 @@
 1. Pengertian Virtualization
 
-Virtualization adalah proses atau teknologi yang memungkinkan pembuatan versi virtual dari sumber daya fisik,
-seperti server, penyimpanan, jaringan, atau sistem operasi, sehingga sumber daya tersebut dapat diakses dan
-digunakan seolah-olah mereka adalah entitas independen. Dengan kata lain, virtualization menciptakan lingkungan
-virtual yang dapat berjalan di atas perangkat keras fisik.
+Virtualization adalah teknologi yang memungkinkan pembuatan versi virtual dari suatu sumber daya, 
+seperti server, komputer, jaringan, penyimpanan data, atau aplikasi. Dengan virtualization, perangkat keras 
+fisik dapat dibagi menjadi beberapa lingkungan virtual yang bekerja secara independen.
 
 2. Jenis-Jenis Virtualization
 ~Server Virtualization
