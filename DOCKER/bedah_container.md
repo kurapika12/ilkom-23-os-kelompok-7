@@ -43,6 +43,33 @@ ps aux
 - u: Menampilkan informasi proses dalam format yang lebih user-friendly, termasuk nama pengguna yang menjalankan proses.
 - x: Menampilkan proses yang tidak terkait dengan terminal (misalnya, daemon atau proses latar belakang).
 
+**3. Bedah isi index.html:**
+
+    **- Cek file dalam container:**
+    Didalam container caddy,file index.html biasanya berada di : 
+    */usr/share/caddy
+    */srv/
+
+### Gunakan perintah berikut untuk mencari lokasi file :
+ ```
+find / -name index.html
+
+```
+**3. Mengedit isi index.html:**
+
+    **- setelah menemukan file index.html :**
+    gunakan editor text seperti Vi atau nano(jika tersedia)
+
+### Gunakan perintah berikut untuk mengedit file :
+ ```
+vi /usr/share/caddy/index.html
+```
+* tekan i untuk masuk ke mode edit
+* edit isi file sesuai kebutuhan
+* tekan esc untuk keluar dari mode edit 
+* ketik : wq untuk menyimpan hasil edit dan keluar dari editor
+
+
 **3. Keluar dari container:**
 ### Perintah
 ```
