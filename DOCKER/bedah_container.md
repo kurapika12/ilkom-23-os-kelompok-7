@@ -13,7 +13,7 @@ docker exec -it caddy-container /bin/sh
 
 **2. Lakukan eksplorasi atau menjalankan command Linux:**
 
-    **- Cek file dalam container:**
+**-Cek file dalam container:**
 
 ### Perintah
 ```
@@ -30,13 +30,29 @@ ls /etc/caddy
     /etc/caddy adalah lokasi default tempat file konfigurasi Caddy disimpan, seperti file Caddyfile yang berisi aturan konfigurasi untuk server web Caddy.
 - nama file nya `Caddyfile`
 
+**- lihat isi file:**
+### Perintah
+```
+cat /etc/caddy/Caddyfile
+```
+**bukti**
 
-    **- lihat proses yang berjalan:**
+<img width="493" alt="{BBD804D4-5FB2-4F6A-BBC7-0F5827B43C68}" src="https://github.com/user-attachments/assets/e5a28243-eed0-4d0f-b6f9-71ba6a74304c" />
+
+**penjelasan**
+1. `cat`, Fungsi: melihat isi file konfigurasi Caddyfile yang berada di lokasi /etc/caddy di dalam container.
+2. :80: Caddy akan mendengarkan (listening) pada port 80, yang merupakan port standar untuk HTTP. Anda dapat mengganti :80 dengan nama domain Anda, misalnya example.com, jika server Anda sudah memiliki konfigurasi DNS.
+3. Opsi ini dikomentari. Jika diaktifkan, Caddy akan bertindak sebagai reverse proxy untuk meneruskan permintaan ke server backend yang berjalan di localhost pada port 8080. Contohnya, jika Anda memiliki aplikasi web berbasis Node.js atau Python Flask
+ **- lihat proses yang berjalan:**
 
 ### Perintah
 ```
 ps aux
 ```
+**bukti**
+
+<img width="589" alt="{EE59F3B7-A03E-440A-A999-770CCF158DC9}" src="https://github.com/user-attachments/assets/16834e09-90aa-44f8-9401-ffdf74f7be3c" />
+
 **Penjelasan :**
 - ps: Perintah ini digunakan untuk menampilkan daftar proses yang sedang berjalan di sistem.
 - a: Menampilkan proses dari semua pengguna.
