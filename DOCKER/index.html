@@ -21,10 +21,10 @@
         height: 100vh; /* Mengatur tinggi penuh layar */
         background: linear-gradient(
           135deg,
-          #1e90ff,
-          #ff6347
+          #00b09b,
+          #96c93d
         ); /* Gradien warna latar belakang */
-        color: white; /* Warna teks putih */
+        color: rgb(205, 91, 91); /* Warna teks putih */
         text-align: center; /* Teks di tengah */
       }
 
@@ -41,6 +41,26 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk menonjolkan elemen */
       }
 
+      /* Animasi untuk heading */
+      @keyframes slideInFromBottom {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      .container h1 {
+        animation: slideInFromBottom 1.5s ease-out forwards;
+      }
+
+      .container h1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan pada teks */
+      }
+
       /* Gaya untuk elemen heading utama */
       .container h1 {
         font-size: 2.5rem; /* Ukuran font besar untuk heading */
@@ -55,7 +75,7 @@
 
       /* Gaya untuk elemen teks yang ditekankan */
       .highlight {
-        color: #ffd700; /* Warna emas untuk penekanan */
+        color: #59ae18; /* Warna emas untuk penekanan */
         font-weight: bold; /* Membuat teks lebih tebal */
       }
     </style>
@@ -64,10 +84,13 @@
     <!-- Wadah utama yang berisi status Docker -->
     <div class="container">
       <!-- Heading utama yang menyampaikan status Docker -->
-      <h1>Docker-nya Udah Bisa Jalan, Nih Boos!</h1>
+      <h1>Naik angkot gratis ongkos</h1>
+      <h1>Dalam kondisi yang hujan deras,</h1>
+      <h1>Docker-nya Udah Bisa Jalan, Nih Boos 😎</h1>
+      <h1>Proyek berhasil tanpa hambatan keras ✌</h1>
       <!-- Paragraf dengan penekanan untuk menyampaikan pesan sukses -->
       <p>
-        Proses berhasil <span class="highlight">tanpa hambatan</span>.
+        Proses berhasil <span class="highlight">by Kelompok 7️⃣</span>.
       </p>
     </div>
   </body>
