@@ -10,7 +10,10 @@ alokasi sumber daya secara dinamis sesuai kebutuhan.
 Selain itu, virtualization memberikan banyak manfaat, seperti fleksibilitas, skalabilitas, dan pengurangan
 biaya operasional. Dalam dunia komputasi modern, teknologi ini menjadi tulang punggung bagi cloud computing,
 di mana pengguna dapat mengakses sumber daya virtual melalui internet tanpa perlu memiliki perangkat keras
-sendiri.
+sendiri. Contoh penerapan virtualization mencakup virtual machine (VM), yang memungkinkan beberapa sistem
+operasi berjalan di satu perangkat, dan network virtualization, yang menciptakan jaringan virtual untuk
+meningkatkan keamanan dan efisiensi. Dengan demikian, virtualization membantu organisasi mengoptimalkan
+sumber daya mereka dan meningkatkan produktivitas.
 
 2. Jenis-Jenis Virtualization
 ~Server Virtualization
