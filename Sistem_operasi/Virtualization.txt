@@ -30,7 +30,18 @@ harus mengganggu operasi server lain Dengan kemampuan ini, organisasi dapat deng
 sistem mereka, meningkatkan efisiensi, dan mengurangi dampak lingkungan dari konsumsi energi yang tinggi.
 
 ~Storage Virtualization
-Menggabungkan beberapa perangkat penyimpanan fisik menjadi satu unit penyimpanan virtual yang terpusat.
+Storage Virtualization adalah teknologi yang memungkinkan penggabungan beberapa perangkat penyimpanan fisik
+menjadi satu unit penyimpanan virtual yang terpusat. Dengan menggunakan perangkat lunak khusus, sumber daya
+penyimpanan dari berbagai perangkat seperti hard drive, SSD, atau NAS dapat dikelola sebagai satu entitas
+yang kohesif. Proses ini membuat pengguna dapat mengakses dan mengelola penyimpanan secara lebih mudah, tanpa
+perlu mengetahui lokasi fisik dari data tersebut. Teknologi ini meningkatkan efisiensi dan fleksibilitas dalam
+mengelola data, terutama dalam lingkungan yang memiliki banyak perangkat penyimpanan berbeda.
+Keuntungan utama dari storage virtualization adalah pengoptimalan kapasitas penyimpanan yang ada, sehingga
+organisasi dapat mengurangi pemborosan ruang penyimpanan yang tidak terpakai. Selain itu, teknologi ini 
+mendukung skalabilitas, memungkinkan penambahan kapasitas penyimpanan tanpa mengganggu operasi yang sedang
+berjalan. Storage virtualization juga menyediakan mekanisme pencadangan dan pemulihan data yang lebih efisien,
+serta meningkatkan kinerja dengan membagi beban kerja secara merata di antara perangkat penyimpanan fisik yang
+digabungkan. Dengan ini, organisasi dapat mengelola data mereka dengan lebih efektif dan hemat biaya.
 Contoh: SAN (Storage Area Network).
 
 ~Network Virtualization
