@@ -44,7 +44,26 @@ docker update --memory <memory_limit> <container_name_or_id>
      --memory: Flag untuk mengatur batas memori container.
        512m: Menetapkan batas memori menjadi 512 MB. Anda juga bisa menggunakan nilai seperti 1g untuk 1 GB.
 2. determined_ganguly: Nama atau ID container yang ingin diperbarui.
-   
+
+**4. Mengubah Kapasitas CPU**
+
+### Perintah
+```
+docker update --cpus <cpu_limit> <container_name_or_id>
+```
+
+<img width="715" alt="{C219E252-5D4F-4130-B193-CDA0C6E4A446}" src="https://github.com/user-attachments/assets/9a7cd6e7-d159-4f1a-ba87-5873c413e227" />
+
+Lalu kita akan melihat kapasitas cpu yang sudah kita ubah :
+### Perintah
+```
+docker inspect <name_container>
+```
+**bukti**
+
+<img width="233" alt="{FFB04596-B221-4586-AE9C-F6AC07608D71}" src="https://github.com/user-attachments/assets/9933221f-5c19-4afa-ba53-04ef6c89d368" />
+
+
 
 
 
