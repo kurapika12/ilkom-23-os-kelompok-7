@@ -28,4 +28,24 @@ docker ps -a
 1. docker ps -a, Fungsi: Menampilkan semua container yang pernah dibuat (baik yang sedang berjalan maupun yang sudah berhenti).
 2. `ps`: memeriksa status yang berjalan
 3. `a`:untuk melihat semua status
+
+**3.Mengubah Kapasitas Memory**
+
+### Perintah
+```
+docker update --memory <memory_limit> <container_name_or_id>
+```
+**bukti**
+
+<img width="804" alt="{7513F2AC-448E-4D8C-BF9E-1A0AC63EA654}" src="https://github.com/user-attachments/assets/5548d8d9-3aa3-49ff-9392-21679aa7c386" />
+
+**penjelasan**
+1. --memory 512m:
+     --memory: Flag untuk mengatur batas memori container.
+       512m: Menetapkan batas memori menjadi 512 MB. Anda juga bisa menggunakan nilai seperti 1g untuk 1 GB.
+2. determined_ganguly: Nama atau ID container yang ingin diperbarui.
+   
+
+
+
    
