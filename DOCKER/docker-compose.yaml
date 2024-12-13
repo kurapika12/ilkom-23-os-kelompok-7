@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  caddy1:
+    image: coba
+    container_name: caddy1
+    ports:
+      - "8080:80"
+    volumes:
+      - C:\Users\LENOVO\Documents\tugas OS\ilkom-23-os-kelompok-7\DOCKER\index.html:/etc/caddy/Caddyfile
+
+    networks:
+      - caddy_network
+
+  caddy2:
+    image: coba
+    container_name: caddy2
+    ports:
+      - "8081:80"
+    volumes:
+      - C:\Users\LENOVO\Documents\tugas OS\ilkom-23-os-kelompok-7\DOCKER\index.html:/etc/caddy/Caddyfile
+    
+    networks:
+      - caddy_network
+
+networks:
+  caddy_network:
+    driver: bridge
