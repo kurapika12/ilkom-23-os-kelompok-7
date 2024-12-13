@@ -4,7 +4,9 @@ Virtualization adalah teknologi yang memungkinkan pembuatan versi virtual dari s
 seperti server, komputer, jaringan, penyimpanan data, atau aplikasi. Dengan virtualization, perangkat keras 
 fisik dapat dibagi menjadi beberapa lingkungan virtual yang bekerja secara independen. Proses ini dilakukan 
 dengan bantuan perangkat lunak yang disebut hypervisor, yang memungkinkan pengguna untuk menjalankan beberapa
-sistem operasi atau aplikasi di satu perangkat keras yang sama. 
+sistem operasi atau aplikasi di satu perangkat keras yang sama. Virtualization meningkatkan efisiensi
+penggunaansumber daya dengan mengurangi kebutuhan akan perangkat keras fisik yang berlebihan dan memungkinkan
+alokasi sumber daya secara dinamis sesuai kebutuhan. 
 
 2. Jenis-Jenis Virtualization
 ~Server Virtualization
