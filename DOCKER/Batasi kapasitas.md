@@ -1,4 +1,4 @@
-## Langkah - langkah untuk melakukan bedah container dengan beberapa command seperti berikut :
+## Langkah - langkah untuk membatasi kapasitas container seperti berikut :
 **1. pastikan container berjalan**
 
 ### Perintah 
