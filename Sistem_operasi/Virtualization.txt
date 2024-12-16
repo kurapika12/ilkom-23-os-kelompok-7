@@ -62,5 +62,17 @@ data center, di mana skalabilitas dan penggunaan sumber daya secara optimal menj
 Contoh: VLAN (Virtual LAN), SDN (Software-Defined Networking)
 
 ~Application Virtualization
-Menjalankan aplikasi di lingkungan virtual tanpa harus menginstalnya secara langsung di sistem operasi.
+Application virtualization adalah teknologi yang memungkinkan aplikasi dijalankan di lingkungan virtual tanpa
+perlu diinstal langsung pada sistem operasi perangkat pengguna. Dengan teknologi ini, aplikasi diisolasi dari
+sistem operasi utama dan dijalankan melalui layer virtualisasi yang memisahkan aplikasi dari perangkat keras
+atau perangkat lunak yang mendasarinya. Hal ini memungkinkan aplikasi dapat berfungsi tanpa bergantung pada
+konfigurasi sistem atau instalasi tertentu, sehingga memberikan fleksibilitas bagi pengguna dan mempermudah
+pengelolaan aplikasi.
+Keuntungan utama dari application virtualization adalah kemudahan distribusi, efisiensi pengelolaan, dan 
+peningkatan keamanan. Karena aplikasi tidak diinstal langsung pada sistem, potensi konflik antar aplikasi
+atau kerusakan pada sistem operasi dapat diminimalkan. Teknologi ini juga memungkinkan organisasi untuk
+menyederhanakan proses deployment, di mana aplikasi dapat didistribusikan melalui jaringan dan dijalankan
+secara instan di berbagai perangkat. Selain itu, keamanan sistem meningkat karena aplikasi yang berjalan
+dalam lingkungan virtual memiliki akses yang terbatas terhadap sistem utama, sehingga mengurangi risiko
+kerentanan atau serangan.
 Contoh: Citrix Virtual Apps.
