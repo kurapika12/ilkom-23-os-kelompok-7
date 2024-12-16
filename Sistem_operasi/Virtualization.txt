@@ -45,7 +45,20 @@ digabungkan. Dengan ini, organisasi dapat mengelola data mereka dengan lebih efe
 Contoh: SAN (Storage Area Network).
 
 ~Network Virtualization
-Membagi jaringan fisik menjadi beberapa jaringan virtual untuk efisiensi dan fleksibilitas.
+Network virtualization adalah teknologi yang memungkinkan pembagian jaringan fisik menjadi beberapa jaringan 
+virtualsecara logis. Teknologi ini memberikan kemampuan untuk memisahkan sumber daya jaringan, seperti
+bandwidth, perangkat keras,atau topologi fisik, sehingga setiap jaringan virtual dapat beroperasi secara
+independen. Dengan memanfaatkan perangkat lunak seperti hypervisor jaringan atau virtual switch, administrator
+dapat membuat, mengonfigurasi, dan mengelola jaringan virtual tanpa harus memengaruhi jaringan fisik yang
+mendasarinya. Hal ini memberikan fleksibilitas dalam pengaturan infrastruktur IT, memungkinkan berbagai
+kebutuhan layanan dan aplikasi berjalan pada lingkungan yang terisolasi namun tetap berbagi sumber daya yang
+sama.
+Manfaat utama dari network virtualization adalah efisiensi dan fleksibilitas yang ditawarkan dalam pengelolaan
+jaringan. Administrasi jaringan menjadi lebih sederhana karena konfigurasi dapat dilakukan secara terpusat
+melalui perangkat lunak. Selain itu, organisasi dapat dengan mudah mengatur jaringan untuk mendukung berbagai
+aplikasi, meningkatkan keamanan dengan memisahkan trafik jaringan, serta menghemat biaya dengan mengurangi
+kebutuhan perangkat keras tambahan. Teknologi ini juga sangat berguna dalam lingkungan cloud computing dan
+data center, di mana skalabilitas dan penggunaan sumber daya secara optimal menjadi prioritas.
 Contoh: VLAN (Virtual LAN), SDN (Software-Defined Networking)
 
 ~Application Virtualization
