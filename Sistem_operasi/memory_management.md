@@ -4,9 +4,15 @@ sumber daya memori komputer dengan cara yang efisien dan optimal. Memori adalah 
 
 Tugas Management Memory
 1. Alokasi Memori
-Sistem operasi bertugas mengalokasikan ruang memori yang dibutuhkan oleh setiap proses. Hal ini memastikan bahwa setiap proses memiliki ruang kerja yang cukup untuk menjalankan tugasnya.
+Alokasi memori adalah salah satu fungsi utama sistem operasi dalam mengatur penggunaan memori komputer oleh berbagai proses yang berjalan. Sistem operasi bertugas untuk menyediakan ruang memori yang dibutuhkan oleh setiap proses, baik untuk instruksi program maupun data yang sedang diolah. Dengan manajemen memori yang baik, sistem operasi dapat memastikan bahwa setiap proses memiliki ruang kerja yang cukup untuk menjalankan tugasnya tanpa mengganggu proses lain. Hal ini dilakukan dengan membagi memori secara dinamis sesuai kebutuhan, baik dengan metode partisi tetap, partisi dinamis, paging, atau segmentasi.
+
+Keberhasilan alokasi memori yang efisien tidak hanya memastikan kinerja sistem yang optimal, tetapi juga mencegah terjadinya masalah seperti fragmentasi atau konflik alokasi. Dalam hal ini, sistem operasi menggunakan mekanisme tertentu untuk melacak penggunaan memori, seperti tabel alokasi memori atau algoritma manajemen memori. Selain itu, sistem operasi juga bertugas untuk menangani situasi ketika permintaan memori melebihi kapasitas fisik, misalnya dengan menggunakan memori virtual. Dengan cara ini, sistem operasi dapat memaksimalkan penggunaan sumber daya memori sekaligus menjaga stabilitas dan efisiensi dalam menjalankan berbagai proses secara bersamaan.
+
 2. Dealokasi Memori
-Ketika suatu proses selesai, sistem operasi akan melepaskan memori yang telah digunakan, sehingga memori tersebut bisa dialokasikan ke proses lain.
+Dealokasi memori adalah proses pelepasan ruang memori yang sebelumnya digunakan oleh suatu proses setelah proses tersebut selesai dijalankan. Tugas ini dilakukan oleh sistem operasi untuk memastikan bahwa memori yang tidak lagi digunakan dapat tersedia kembali bagi proses lain. Dengan cara ini, sistem operasi menjaga efisiensi penggunaan memori serta mencegah pemborosan sumber daya. Proses dealokasi dilakukan secara otomatis dengan menghapus referensi proses yang telah selesai dari tabel alokasi memori dan menandai ruang tersebut sebagai memori kosong yang siap digunakan kembali.
+
+Proses dealokasi memori sangat penting untuk menjaga kinerja sistem secara keseluruhan. Jika sistem operasi gagal melakukan dealokasi dengan benar, dapat terjadi kebocoran memori (memory leak), di mana ruang memori yang seharusnya kosong tidak dapat digunakan kembali. Akibatnya, kapasitas memori akan berkurang secara perlahan, sehingga memengaruhi performa sistem. Oleh karena itu, mekanisme dealokasi yang efisien sangat diperlukan, terutama pada sistem yang menjalankan banyak proses secara bersamaan. Dengan manajemen memori yang baik, sistem operasi dapat memastikan distribusi memori yang adil dan optimal untuk mendukung kelancaran proses-proses berikutnya.
+
 3. Isolasi Proses
 Setiap proses memiliki ruang memori terpisah agar tidak saling mengganggu. Hal ini mencegah kesalahan seperti pelanggaran memori atau gangguan pada data proses lain.
 4. Mengatasi Fragmentasi
