@@ -1,95 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Status Docker</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Sederhana</title>
     <style>
-      /* Menghapus margin dan padding default dari semua elemen, serta mengaktifkan box-sizing */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      /* Mengatur gaya dasar untuk body */
-      body {
-        font-family: "Arial", sans-serif; /* Font default untuk teks */
-        display: flex; /* Menggunakan flexbox untuk penataan */
-        justify-content: center; /* Memusatkan konten secara horizontal */
-        align-items: center; /* Memusatkan konten secara vertikal */
-        height: 100vh; /* Mengatur tinggi penuh layar */
-        background: linear-gradient(
-          135deg,
-          #00b09b,
-          #96c93d
-        ); /* Gradien warna latar belakang */
-        color: rgb(255, 56, 232); /* Warna teks putih */
-        text-align: center; /* Teks di tengah */
-      }
-
-      /* Gaya untuk wadah utama yang berisi teks */
-      .container {
-        padding: 20px 40px; /* Memberikan ruang dalam di sekitar konten */
-        background: rgba(
-          0,
-          0,
-          0,
-          0.5
-        ); /* Warna latar belakang dengan transparansi */
-        border-radius: 15px; /* Membuat sudut membulat pada kotak */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk menonjolkan elemen */
-      }
-
-      /* Animasi untuk heading */
-      @keyframes slideInFromBottom {
-        0% {
-          transform: translateY(100%);
-          opacity: 0;
+        /* Reset gaya bawaan browser */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Font sederhana */
+            background: linear-gradient(135deg, #74ebd5, #9face6); /* Latar belakang gradasi */
+            color: #333; /* Warna teks utama */
+            display: flex;
+            justify-content: center; /* Konten di tengah secara horizontal */
+            align-items: center; /* Konten di tengah secara vertikal */
+            height: 100vh; /* Tinggi penuh layar */
         }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
+
+        /* Kotak utama (container) */
+        .container {
+            width: 90%; /* Lebar maksimum 90% layar */
+            max-width: 600px; /* Lebar maksimum 600px */
+            background: #fff; /* Latar belakang putih */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan kotak */
+            text-align: center; /* Teks rata tengah */
+            overflow: hidden; /* Konten tidak keluar dari batas kotak */
         }
-      }
-      
-      .container h1 {
-        animation: slideInFromBottom 1.5s ease-out forwards;
-      }
 
-      .container h1 {
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan pada teks */
-      }
+        /* Bagian Header */
+        .header {
+            background: #4caf50; /* Warna hijau */
+            color: white; /* Warna teks putih */
+            padding: 20px; /* Jarak dalam */
+        }
 
-      /* Gaya untuk elemen heading utama */
-      .container h1 {
-        font-size: 2.5rem; /* Ukuran font besar untuk heading */
-        margin-bottom: 15px; /* Memberikan ruang bawah heading */
-      }
+        .header h1 {
+            margin: 0; /* Hapus jarak luar */
+            font-size: 1.8rem; /* Ukuran font */
+        }
 
-      /* Gaya untuk paragraf deskripsi */
-      .container p {
-        font-size: 1.2rem; /* Ukuran font sedang untuk deskripsi */
-        margin-top: 10px; /* Memberikan ruang atas paragraf */
-      }
+        /* Bagian Utama (Konten) */
+        .content {
+            padding: 30px; /* Jarak dalam */
+        }
 
-      /* Gaya untuk elemen teks yang ditekankan */
-      .highlight {
-        color: #59ae18; /* Warna emas untuk penekanan */
-        font-weight: bold; /* Membuat teks lebih tebal */
-      }
+        .content h2 {
+            color: #4caf50; /* Warna hijau */
+            margin-bottom: 10px; /* Jarak bawah */
+            font-size: 1.5rem; /* Ukuran font */
+        }
+
+        .content p {
+            font-size: 1rem; /* Ukuran font paragraf */
+            color: #555; /* Warna teks abu-abu */
+        }
+
+        .content .highlight {
+            color: #ff5722; /* Warna teks oranye untuk menonjolkan */
+            font-weight: bold; /* Teks tebal */
+        }
+
+        /* Tombol */
+        .btn {
+            background: #4caf50; /* Warna hijau */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Jarak dalam tombol */
+            border: none; /* Hapus border */
+            border-radius: 5px; /* Sudut melengkung */
+            cursor: pointer; /* Pointer saat hover */
+            font-size: 1rem; /* Ukuran font tombol */
+            margin-top: 20px; /* Jarak atas */
+            transition: background 0.3s ease; /* Efek transisi warna saat hover */
+        }
+
+        .btn:hover {
+            background: #388e3c; /* Warna hijau lebih gelap saat hover */
+        }
+
+        /* Bagian Footer */
+        .footer {
+            background: #f5f5f5; /* Latar belakang abu-abu muda */
+            padding: 15px; /* Jarak dalam */
+            font-size: 0.9rem; /* Ukuran font kecil */
+            color: #777; /* Warna teks abu-abu muda */
+            border-top: 1px solid #e0e0e0; /* Garis atas di footer */
+        }
     </style>
-  </head>
-  <body>
-    <!-- Wadah utama yang berisi status Docker -->
+</head>
+<body>
+    <!-- Kotak utama -->
     <div class="container">
-      <!-- Heading utama yang menyampaikan status Docker -->
-      <h1>Docker-nya Udah Bisa Jalan, senggol dong 😎</h1>
-      <h1>Proyek berhasil tanpa hambatan keras ✌</h1>
-      <!-- Paragraf dengan penekanan untuk menyampaikan pesan sukses -->
-      <p>
-        Proses berhasil <span class="highlight">by Kelompok 7️⃣</span>.
-      </p>
+        <!-- Bagian header -->
+        <header class="header">
+            <h1>Status Proyek</h1> <!-- Judul di bagian header -->
+        </header>
+        <!-- Bagian konten utama -->
+        <main class="content">
+            <h2>🎉 Proyek Berhasil! 🎉</h2> <!-- Judul utama konten -->
+            <p>Docker-nya sudah jalan tanpa hambatan! Selamat kepada <span class="highlight">Kelompok 7</span> atas kerjanya. 😊</p> <!-- Paragraf penjelasan -->
+            <button class="btn">Senggol Dong!</button> <!-- Tombol aksi -->
+        </main>
+        <!-- Bagian footer -->
+        <footer class="footer">
+            <p>© 2024 Kelompok 7. All rights reserved.</p> <!-- Copyright -->
+        </footer>
     </div>
-  </body>
+</body>
 </html>
